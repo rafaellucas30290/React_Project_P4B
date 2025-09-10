@@ -2,7 +2,7 @@ import React from 'react'
 
 const Adicao = (props) => {
   return (
-    <div>O resultado de {props.num1} - {props.num2} é {props.num1+props.num2} </div>
+    <div>Adicao entre {props.num1} e {props.num2} é igual a {props.num1+props.num2}</div>
   )
 }
 

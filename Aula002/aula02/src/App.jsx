@@ -1,10 +1,11 @@
 import React from 'react'
-import TrabalhandoComImagens from './components/TrabalhandoComImagens'
+
+import HookContador from './components/HookContador.jsx'
 
 const App = () => {
   return (
     <div>
-      <TrabalhandoComImagens/>
+        
     </div>
   )
 }

@@ -1,0 +1,25 @@
+{
+    "alunos": [
+        {
+            "id": 1,
+            "nome": "Samir",
+            "idade": 37,
+            "email": "samirSahur@gmail.com"
+        },{
+            "id": 2,
+            "nome": "Gwen Stacy",
+            "idade": 22,
+            "email": "sougwen@gwen.com"
+        },{
+            "id": 3,
+            "nome": "James Sunderland",
+            "idade": 29,
+            "email": "james@sunderland.com"
+        },{
+            "id": 4,
+            "nome": "Nathan Drake",
+            "idade": 38,
+            "email": "nathan@drake.com"
+        }
+    ]
+}

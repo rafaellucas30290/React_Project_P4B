@@ -1,10 +1,10 @@
 import React from 'react'
-import RenderizarImagem from './components/RenderizarImagem'
+import Campanha from './components/Campanha'
 
 const App = () => {
   return (
     <div>
-      <RenderizarImagem/>
+      <Campanha mes="novembro"/>
     </div>
   )
 }

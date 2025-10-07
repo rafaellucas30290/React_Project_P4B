@@ -1,16 +1,16 @@
 import React from 'react'
-import styles from './Campanha.css'
+import styles from './Campanha.module.css'
 
 
     
-const Campanha = () => {
+const Campanha = (props) => {
     function definirMensagem(mes){
         if (mes === "setembro"){
             return "Prevenção ao suicídio"
         } else if (mes === "outubro"){
-            return (mes === "Conscientização sobre o câncer de mama")
+            return "Conscientização sobre o câncer de mama"
         } else if (mes === "novembro"){
-            return ("Prevenção e combate ao câncer de próstata")
+            return "Prevenção e combate ao câncer de próstata"
         }
     }
     function definirCor(mes){
@@ -23,7 +23,8 @@ const Campanha = () => {
         }
     }
     return (
-    <div className={definirCor(pros.mes)}> <p> esse e o texto teste</p>
+    <div className={definirCor(props.mes)}>
+        {definirMensagem(props.mes)}
     </div>
   )
 }

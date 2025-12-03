@@ -1,16 +1,27 @@
 import React from 'react'
-import BannerAd from './components/BannerAd'
-import { BrowserRouter, Route, Routes }  from 'react-router-dom'
-import { Container } from 'react-bootstrap'
+import Inicial from './pages/Inicial'
+import Dpo from './pages/Dpo'
+import Faculdade from './pages/Faculdade'
+import Noticias from './pages/Noticias'
 import CustomNavbar from './components/CustomNavbar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 const App = () => {
   return (
-    <CustomNavbar>
+    <div>
+        <BrowserRouter>
+          <CustomNavbar/>
+          <Routes>
+            <Route path='/' element={<Inicial/>}/>
+            <Route path="/a-faculdade" element={<Faculdade />} />
+            <Route path="/dpo-lgpd" element={<Dpo/>}/>
+            <Route path="/noticias" element={<Noticias/>}/>
+          </Routes>
+        </BrowserRouter>
 
-    <BrowserRouter>
-        <Container className='ay-4'
-     </BrowserRouter>
-    </CustomNavbar>
+        <Footer />
+    </div>
+    
   )
 }
 

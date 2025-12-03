@@ -6,7 +6,7 @@ const BannerAd = () => {
   return (
     <>
     
-    <Container className="ay-4 p-0" fluid>
+    <Container className="my-4 p-0" fluid>
 
 
         <Carousel fade interval={5000} controls={true} indicators={true}>
@@ -15,7 +15,7 @@ const BannerAd = () => {
                     className='d-block w-100'
                     src='/banner1.png'
                     alt='Vestibular 2026.1'
-                    
+                    style={{borderRadius: '8px'}}
                 />
             </Carousel.Item>
             <Carousel.Item>
@@ -23,7 +23,7 @@ const BannerAd = () => {
                     className='d-blodck w-100'
                     src='/banner2.png'
                     alt='Inova Uniesp 2026'
-
+                    style={{borderRadius: '8px'}}
                 />
             </Carousel.Item>
         </Carousel>

@@ -25,13 +25,13 @@ const ListaDeAlunos = () => {
             </thead>
             <tbody>
                 {
-                    alunos.map(aluno) => {
+                    alunos.map(aluno) =>{
                         <tr key={aluno.id}>
                             <td>{aluno.id}</td>
                             <td>{aluno.nome}</td>
                             <td>{aluno.curso}</td>
                         </tr>
-                    }
+                      }
                 }
             </tbody>
         </table>
